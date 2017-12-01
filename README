@@ -1,0 +1,1 @@
+This is a Qt based project that fetches data from https://boards.eune.leagueoflegends.com/en/redtracker. The data is presented in a table view and can be filtered in order to search for specific words/phrases.
