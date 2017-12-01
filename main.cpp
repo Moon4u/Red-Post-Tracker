@@ -1,0 +1,18 @@
+
+#include <QApplication>
+#include "mainwindow.h"
+
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * This is the main method, the probgram starts from here.
+ */
+int main(int argc, char *argv[])
+{
+	QApplication a(argc, argv);
+	MainWindow w;
+	w.show();
+
+	return a.exec();
+}
+////////////////////////////////////////////////////////////////////////////////

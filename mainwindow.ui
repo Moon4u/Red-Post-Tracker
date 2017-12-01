@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QWidget" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RedTrackerSearcher</string>
+  </property>
+  <layout class="QGridLayout" name="m_glMain">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="1" column="0" colspan="3">
+    <widget class="QLineEdit" name="m_lePagesToLookup">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1 page contains 50 results. If you left this field as blank or enter 0, it will look through all pages.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Number of pages to lookup</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLineEdit" name="m_leSearchField">
+     <property name="placeholderText">
+      <string>Search in post content or title</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QTableView" name="m_tvResults"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="m_lblDateConstraint">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Date Constraints</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="m_btnStartSearch">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QDateEdit" name="m_dteDateFilter"/>
+   </item>
+   <item row="6" column="0" colspan="3">
+    <widget class="QLabel" name="m_lblStatus">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>m_leSearchField</tabstop>
+  <tabstop>m_btnStartSearch</tabstop>
+  <tabstop>m_lePagesToLookup</tabstop>
+  <tabstop>m_dteDateFilter</tabstop>
+  <tabstop>m_tvResults</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
