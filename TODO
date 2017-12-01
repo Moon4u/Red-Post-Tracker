@@ -1,0 +1,5 @@
+Todo list:
+Variables, classes and methods names can be improved.
+A better abstraction can be made on the networking and parsing part.
+Threading can be added.
+The project currently works only for the na boards. Different boards can be added easily.
